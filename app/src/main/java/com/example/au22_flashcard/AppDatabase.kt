@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 
 @Database(entities = [Word::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
-    abstract val wordDao : WordDao
+    abstract fun wordDao() : WordDao
 
     companion object {
 
@@ -23,7 +23,7 @@ abstract class AppDatabase : RoomDatabase() {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         AppDatabase::class.java,
-                        "word_database"
+                        "words_db"
                     )
                         .fallbackToDestructiveMigration()
                         .build()

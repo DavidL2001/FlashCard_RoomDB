@@ -16,4 +16,56 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/addWordBtn"
+        android:layout_width="223dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:text="Lägg till flera ord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordTextView" />
+
+    <Button
+        android:id="@+id/readBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitta tillgängligt ord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEnglishWord"
+        android:layout_width="99dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readBtn"
+        tools:text="word" />
+
+    <TextView
+        android:id="@+id/tvSwedishWord"
+        android:layout_width="99dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/readBtn"
+        tools:text="ord" />
+
+    <EditText
+        android:id="@+id/rollNoBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Skriv in ordets nummer"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

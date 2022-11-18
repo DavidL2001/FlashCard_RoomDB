@@ -4,9 +4,12 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "word_table")
-class Word(
-    @PrimaryKey(autoGenerate = true) val id: Int,
-    @ColumnInfo(name = "english") var english : String,
-    @ColumnInfo(name = "swedish") var swedish : String) {
-}
+
+@Entity(tableName = "words_db")
+data class Word(
+    @PrimaryKey(autoGenerate = true) val id: Int?,
+    @ColumnInfo(name = "english") var english: String?,
+    @ColumnInfo(name = "swedish") var swedish: String?,
+    @ColumnInfo(name = "roll_no") var rollNo: Int?,
+)
+
